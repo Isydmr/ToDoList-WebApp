@@ -1,0 +1,160 @@
+﻿@model IEnumerable<ToDoList_WebApplication.Models.Task>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h3>
+    <a asp-action="Create">Create New Task</a>
+</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BeginDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndDate)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BeginDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EndDate)
+                </td>
+
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@*
+        <body>
+
+            @using (Html.BeginForm())
+            {
+                @foreach (var item in Model)
+                {
+                    if (Model.First() == item)
+                    {
+                        <div class="form-group">
+                            <label class="switch">
+                                @Html.CheckBoxFor(modelItem => item.ShowFinished, new { @class = "form-control" })
+                                <div class="slider round">
+                                </div>
+                            </label>
+                            <br />
+                            @Html.LabelFor(modelItem => item.ShowFinished)
+
+                        </div>
+
+                        <div>@ViewBag.Checked</div>
+                        <br /><br />
+                        <div class="alert alert-warning fade">
+                            <img src="http://entechprod.blob.core.windows.net/dotnetfiddle/morpheus.jpg" style="max-width:100%;" /><br /><br />
+                            <strong><span class="alert-content"></span></strong>
+                        </div>
+                    }
+
+
+                }
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $("#ShowFinished").change(function () {
+                            if ($("#ShowFinished").is(":checked")) {
+                                $("form").submit();
+                            }
+                        });
+                    });
+                </script>
+            }
+        </body>
+
+
+    <!DOCTYPE html>
+    <!-- CSS Includes -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- JS includes -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="//ajax.aspnetcdn.com/ajax/mvc/4.0/jquery.validate.unobtrusive.min.js"></script>
+
+    <style type="text/css">
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+            .switch input {
+                display: none;
+            }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+        }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                transition: .4s;
+            }
+
+        input[type="checkbox"]:checked + input[type="hidden"] + .slider,
+        input[type="checkbox"]:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input[type="checkbox"]:focus + input[type="hidden"] + .slider,
+        input[type="checkbox"]:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input[type="checkbox"]:checked + input[type="hidden"] + .slider:before,
+        input[type="checkbox"]:checked + .slider:before {
+            transform: translateX(26px);
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+    </style>
+
+
+*@
