@@ -2,7 +2,6 @@
 > Basic note taking web application using ASP.NET MVC 
 
 [![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
 
 
 ![](header.png)
