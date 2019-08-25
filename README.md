@@ -15,7 +15,7 @@ Windows:
 Download here: https://dotnet.microsoft.com/download/dotnet-core/2.1
 
 ```
-.NET Core 2.1 SDK 
+Microsoft SQL Server
 ```
 Queries under https://github.com/Isydmr/ToDoList-WebApp/tree/master/ToDoList-WebApplication/Queries
 
