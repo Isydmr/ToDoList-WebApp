@@ -20,6 +20,11 @@ Download here: https://dotnet.microsoft.com/download/dotnet-core/2.1
 * 0.0.1
     * Work in progress
 
+## Demo (GIF)
+
+![](demo.gif)
+
+
 ## Meta
 
 soydemir.ihsan@gmail.com
