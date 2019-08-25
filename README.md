@@ -4,7 +4,7 @@
 [![Build Status][travis-image]][travis-url]
 
 
-![](header.png)
+![](logo.png)
 
 ## Installation
 
