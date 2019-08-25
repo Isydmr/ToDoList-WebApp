@@ -12,7 +12,7 @@ Windows:
 ```
 .NET Core 2.1 SDK 
 ```
-https://dotnet.microsoft.com/download/dotnet-core/2.1
+Download here: https://dotnet.microsoft.com/download/dotnet-core/2.1
 
 
 ## Release History
