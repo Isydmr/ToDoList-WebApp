@@ -41,7 +41,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 4. Push to the branch (`git push origin feature/fooBar`)
 5. Create a new Pull Request
 
-## Improvements
+## Further Improvements
 
 1. Add toggle switch for displaying unfinished/finished tasks
 2. Add BLL Layer 
