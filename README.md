@@ -49,3 +49,5 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 
 1. Add toggle switch for displaying unfinished/finished tasks
 2. Add BLL Layer 
+3. Add DPL Layer ( parses a DataTable from DAL Layer )
+4. Add reflexion&generic in DAL
