@@ -1,7 +1,7 @@
 # ToDoList
 > Basic note taking web application using ASP.NET MVC 
 
- [![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](https://travis-ci.org/dwyl/esta)
+[![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](https://travis-ci.org/dwyl/esta)
  
 ![](logo.png)
 
@@ -28,6 +28,9 @@ Queries under https://github.com/Isydmr/ToDoList-WebApp/tree/master/ToDoList-Web
 
 ![](demo.gif)
 
+## Azure 
+
+http://tasklists.azurewebsites.net/
 
 ## Meta
 
