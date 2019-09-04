@@ -54,3 +54,5 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 2. Add BLL Layer 
 3. Add DPL Layer ( parses a DataTable from DAL Layer )
 4. Add reflexion&generic in DAL
+5. Add React
+6. Add Login Page
